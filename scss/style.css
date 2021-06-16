@@ -1,0 +1,223 @@
+.ip_address {
+  width: 90%;
+  left: 5%;
+  position: absolute;
+  top: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.ip_address .title {
+  color: #fff;
+  font-weight: 500;
+  font-size: 2rem;
+}
+
+.ip_address .input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 1.7rem 0;
+}
+
+.ip_address .input .input_text {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #2b2b2b;
+  width: 37.5rem;
+  height: 3.5rem;
+  border: 0;
+  font-size: 1.2rem;
+  padding: 0 1.2rem;
+  outline: none;
+  border-radius: 1rem 0 0 1rem;
+  font-family: 'Rubik', sans-serif;
+}
+
+.ip_address .input .input_text::-webkit-input-placeholder {
+  color: #969696;
+}
+
+.ip_address .input .input_text:-ms-input-placeholder {
+  color: #969696;
+}
+
+.ip_address .input .input_text::-ms-input-placeholder {
+  color: #969696;
+}
+
+.ip_address .input .input_text::placeholder {
+  color: #969696;
+}
+
+.ip_address .input .button {
+  cursor: pointer;
+  background: #2b2b2b url(/scss/images/icon-arrow.svg) no-repeat;
+  background-position: center;
+  border: 0;
+  height: 3.5rem;
+  width: 3.5rem;
+  border-radius: 0 1rem 1rem 0;
+}
+
+.ip_address .input .button:hover {
+  opacity: .7;
+}
+
+@media (max-width: 1100px) {
+  .ip_address .input {
+    margin: 1rem 0;
+  }
+}
+
+@media (max-width: 800px) {
+  .ip_address .input {
+    width: 100%;
+  }
+  .ip_address .input .input_text {
+    width: 90%;
+    padding: 0 .3rem 0 .5rem;
+  }
+  .ip_address .input .button {
+    width: 3.5rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .ip_address .input .input_text {
+    font-size: .9rem;
+  }
+}
+
+.ip_address .dates {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 15px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 75rem;
+  height: 11.25rem;
+  background: #fff;
+  border-radius: 1rem;
+  -webkit-box-shadow: 0 0.9rem 2.7rem rgba(0, 0, 0, 0.4);
+          box-shadow: 0 0.9rem 2.7rem rgba(0, 0, 0, 0.4);
+}
+
+.ip_address .dates .date {
+  width: 20%;
+  list-style: none;
+  position: relative;
+}
+
+.ip_address .dates .date:not(:last-child)::before {
+  content: "";
+  position: absolute;
+  top: 1.6rem;
+  right: -1rem;
+  height: 6.25rem;
+  width: 1px;
+  background: #969696;
+}
+
+.ip_address .dates .date p {
+  color: #969696;
+  font-weight: 500;
+  letter-spacing: 1px;
+  font-size: 1rem;
+}
+
+.ip_address .dates .date h2 {
+  color: #2b2b2b;
+}
+
+@media (max-width: 1300px) {
+  .ip_address .dates {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1100px) {
+  .ip_address .dates {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 15px 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 41rem;
+    height: 17rem;
+  }
+  .ip_address .dates .date {
+    width: 100%;
+    text-align: center;
+  }
+  .ip_address .dates .date:not(:last-child)::before {
+    display: none;
+  }
+  .ip_address .dates .date p {
+    margin: 0;
+    margin-bottom: .3rem;
+    font-size: .9rem;
+  }
+  .ip_address .dates .date h2 {
+    margin: 0;
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .ip_address .dates {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1100px) {
+  .ip_address {
+    top: .5rem;
+  }
+}
+
+html {
+  min-height: 100vh;
+  position: relative;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 1.125rem;
+  font-family: 'Rubik', sans-serif;
+}
+
+.background_img {
+  background: url(/scss/images/pattern-bg.png) no-repeat;
+  background-size: cover;
+  height: 35vh;
+  width: 100%;
+}
+
+#mapid {
+  position: absolute;
+  height: 65vh;
+  width: 100%;
+  z-index: -1;
+}
+/*# sourceMappingURL=style.css.map */

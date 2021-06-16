@@ -1,0 +1,173 @@
+.ip_address{
+    width: 90%;
+    left: 5%;
+    position: absolute;
+    top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .title{
+        color: #fff;
+        font-weight: 500;
+        font-size: 2rem;
+    }
+
+    .input{
+        display: flex;
+        margin: 1.7rem 0;
+
+        .input_text{
+            box-sizing: border-box;
+            color: $Very-Dark-Gray;
+            width: 37.5rem;
+            height: 3.5rem;
+            border: 0;
+            font-size: 1.2rem;
+            padding: 0 1.2rem;
+            outline: none;
+            border-radius: 1rem 0 0 1rem;
+            font-family: 'Rubik', sans-serif;
+
+            &::placeholder{
+                color: $Dark-Gray;
+            }
+        }
+
+        .button{
+            cursor: pointer;
+            background: $Very-Dark-Gray url(/scss/images/icon-arrow.svg) no-repeat;
+            background-position: center;
+            border: 0;
+            height: 3.5rem;
+            width: 3.5rem;
+            border-radius: 0 1rem 1rem 0;
+
+            &:hover{
+                opacity: .7;
+            }
+        }
+    }
+
+    @media (max-width: 1100px){
+        .input{
+            margin: 1rem 0;
+        }
+    }
+
+    @media (max-width: 800px){
+        .input{
+            width: 100%;
+
+            .input_text{
+                width: 90%;
+                padding: 0 .3rem 0 .5rem;
+            }
+
+            .button{
+                width: 3.5rem;
+            }
+        }
+    }
+
+    @media (max-width: 500px){
+        .input{
+            .input_text{
+                font-size: .9rem;
+            }
+        }
+    }
+
+    .dates{
+        box-sizing: border-box;
+        padding: 15px 0;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-around;
+        width: 75rem;
+        height: 11.25rem;
+        background: #fff;
+        border-radius: 1rem;
+        box-shadow: 0 .9rem 2.7rem rgba(0,0,0,.4);
+
+
+        .date{
+            width: 20%;
+            list-style: none;
+            position: relative;
+
+            &:not(:last-child){
+                &::before{
+                    content: "";
+                    position: absolute;
+                    top: 1.6rem;
+                    right: -1rem;
+                    height: 6.25rem;
+                    width: 1px;
+                    background: $Dark-Gray;
+                }
+            }
+
+            p{
+                color: $Dark-Gray;
+                font-weight: 500;
+                letter-spacing: 1px;
+                font-size: 1rem;
+            }
+
+            h2{
+                color: $Very-Dark-Gray;
+            }
+        }
+    }
+
+    @media (max-width: 1300px){
+        .dates{
+            width: 100%;
+        }
+    }
+
+    @media (max-width: 1100px){
+        .dates{
+            flex-direction: column;
+            padding: 15px 0;
+            align-items: center;
+            width: 41rem;
+            height: 17rem;
+
+            .date{
+                width: 100%;
+                text-align: center;
+
+                &:not(:last-child){
+                    &::before{
+                        display: none;
+                    }
+                }
+
+                p{
+                    margin: 0;
+                    margin-bottom: .3rem;
+                    font-size: .9rem;
+                }
+
+                h2{
+                    margin: 0;
+                    font-size: 1.3rem;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 800px){
+        .dates{
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 1100px){
+    .ip_address{
+        top: .5rem;
+    }
+}

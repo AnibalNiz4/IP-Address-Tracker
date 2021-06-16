@@ -1,0 +1,29 @@
+@import "variables";
+@import "ip_address";
+
+html{
+    min-height: 100vh;
+    position: relative;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1.125rem;
+    font-family: 'Rubik', sans-serif;
+}
+
+.background_img{
+    background: url(/scss/images/pattern-bg.png) no-repeat;
+    background-size: cover;
+    height: 35vh;
+    width: 100%;
+}
+
+#mapid{
+    position: absolute;
+    height: 65vh;
+    width: 100%;
+    z-index: -1;
+}
